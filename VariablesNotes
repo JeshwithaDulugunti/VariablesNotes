@@ -1,0 +1,131 @@
+Java Script : scripting language, high level programming language
+-> weakly or loosely typed language (no need of datatype)
+-> lightweight and dynamic language used to build UI
+-> no need of compiler only interpreter 
+-> used to create dynamic websites
+-> it deals with form validations
+-> JS introduced in 1995 by Brenden eich
+-> first js program was developed within 7-8 days with name "Mocha"
+-> first name of JS was "live script" later renamed as JS
+-> java and js are different from each other
+Applications of JS: Mobile apps, smartwatch, gaming, web apps, server side apps
+
+
+
+
+* python and js are dynamically typed.
+1. Variables : containers or memory blocks to store the data 
+it is used to the data of any kind
+and these variables are case sensitive
+start with letters, underscore and dollarsign($) and should not start with numbers.
+reserved words (keywords )are not allowed
+
+Types : var (1995), let (2015-es6), const (2015-es6)
+ex: var a = 10; 
+-> stores in browser engine which contains memories: static area, class static method area, stack area, heap area. 10 is stored in heap area.
+console.log(a);
+-> identifiers are names given to the variables
+
+
+HOW TO DECLARE VARIABLES?
+-->var
+-->let
+-->const
+
+
+-->Reassigning is possible
+when we use reassigning the new value will get displayed.
+when we use reassigning we will get addition value when we use addition of same variable name two time
+ex: var a = 5
+        a=1
+        document.write(a)
+        document.write(a+a) // output: 2
+
+
+USING LET:
+same we can reassign using let just like var 
+it accepts the reassigning
+ex: 
+let a3 = 5
+        a3= 5
+        a3 = a3+a3
+        document.write(a3+a3) //output: 20
+
+
+CONST variable:
+ex:
+ const a5 = "Jeshu"
+        console.log(a5)
+const wont accept reassigning
+const wont accept redeclaring 
+
+REDECLARING:
+
+redeclaring accepts only by var 
+let doesnot accept declaring
+var a = 4
+        var a = 3
+        document.write(a) //output: 3
+        let b= 4
+        let b = 5
+        document.write(b) // output: ntg plain
+
+
+BLOCKS CODE:
+
+here what the code we write inside the braces
+Ex: 
+var name = "jeshu"
+        {
+            var name= "anuuuu"
+            console.log(name)
+        }
+        console.log(name)
+the data inside the {} is the blocks code 
+
+USING VAR:
+when we use the var variable the blocks code can be accessed inside and outside the blocks and only reassigned value will get prints
+ex:
+var name = "jeshu"
+        {
+            var name= "anuuuu"
+            console.log(name)
+        }
+        console.log(name)// output: anuuu
+						    anuuu
+
+USING LET:
+when we use let variable the blocks code cannot be accessed outside the blocks code
+outside console will accept the outside blocks code 
+ex:
+
+        let name= "jeshu"
+        {
+            let name = "anoooo"
+            console.log(name) //output: anooo
+        }
+        console.log(name) //output:jeshu
+
+we can add the items how we did reassigning or redeclaring
+FOR VAR:
+ex:
+ var num = 3
+        {
+            var num= 5
+            console.log(num+num)
+        }
+        console.log(num+num) // OUTPUT: 10
+								10
+
+FOR LET :
+EX:
+let num = 4
+        {
+            let num= 7
+            console.log(num+num) // output: 14
+
+        }
+        console.log(num+num) //output: 8
+
+
+implemented in VSCODE
