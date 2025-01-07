@@ -1,0 +1,124 @@
+DATA TYPES: 
+* As js is dynamic we can directly write the datatype
+* there are 2 types:  
+
+ 1.premitive datatypes:  predefined datatypes and here we can able to store only single values
+ to check this datatypes we use typeof operator
+--> Numbers : includes integers and float
+--> String : Stream of character enclosed in quotes ( we use ' ' , " '', `` single double backticks)
+--> Boolean
+-->Null : A data which has no value or empty value
+-->Undefined : a declared variable with no value  
+
+NUMBER DATATYPE:
+ex:
+let a = 1
+console.log(a) // OUTPUT: 1
+console.log(typeof(a)) // OUTPUT : NUMBER
+
+
+STRING DATATYPES:
+
+* BACKTICKS: Introduced in ES6 version 
+* in order to add any kind of functionality we use backticks
+
+EX: 
+
+let a = 4
+let b = 5
+console.log("hi " + a) // OUTPUT: hi 4
+console.log(`hi +${a+b}`) // OUTPUT: hi +9
+* This backticks is used to calculate the values even after placing a message in form of concatenation 
+* and we can perform any sort of conditional statements also in backticks
+
+EX: 
+let a = 4
+let b = 5
+console.log(`Checking whether the number is less or greater + ${a<b}`)
+// OUTPUT: Checking whether the  number is less or greater + true
+ here we are checking the number using backticks so we get message as well as the answer for the conditional statement
+ when we use the document to get the output then all the document statements will get to single line so we need to use br tag we should use br tag also in quotes
+EX:
+document.write("hi"+ a +"<br>")
+document.write(`hi hello + ${a<b}`)
+// OUTPUT: hi a
+		   hi hello true
+
+EX:
+var Sname = "sai"
+var S1name = "kumar"
+console.log(`Reactjs Student = ${Sname + S1name}`)
+
+let fname= "jeshwitha"
+let lname = "reddy"
+let age= 21
+let greeting = "good morning"
+console.log(greeting +" "+ `I am  ${fname + lname} My age is ${age}`)
+
+
+NULL:
+EX:
+let v = null
+console.log(v) //OUTPUT: null
+
+UNDEFINED:
+EX:
+let h = undefined
+console.log(h) //OUTPUT: undefined
+
+
+
+
+2. non premitive datatypes
+in this we have 2 types:
+ * arrays
+* objects  
+
+
+Implemented in VSCODE
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datatypes</title>
+</head>
+<body>
+    <script src="./datatypes.js"></script>
+</body>
+</html>
+
+
+
+let a = 1
+console.log(a)
+console.log(typeof(a))
+var s = "34.5"
+console.log(typeof(s))
+
+let a = 4
+let b = 5
+console.log("hi " + a)
+console.log(`hi +${a+b}`)
+console.log(`Checking whether the number is less or greater + ${a<b}`)
+document.write("hi"+ a +"<br>")
+document.write(`hi hello + ${a<b}`)
+
+let fname= "jeshwitha"
+let lname = "reddy"
+let age= 21
+let greeting = "good morning"
+console.log(greeting +" "+ `I am  ${fname + lname} My age is ${age}`)
+
+var Sname = "sai"
+var S1name = "kumar"
+var task = `ReactJS Student = ${Sname + S1name}`
+console.log(`Reactjs Student = ${Sname + S1name}`)
+console.log(task)
+
+let v = null
+console.log(v)
+
+let h = undefined
+console.log(h)
