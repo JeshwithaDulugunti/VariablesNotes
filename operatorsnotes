@@ -1,0 +1,170 @@
+JS OPERATORS:
+
+1. Arithmetic Operators:  +, -, *, / (it considers Q) , %(it considers remainder) , **(exponential)
+increment decrement ++, --
+
+division and modular division example:
+let a = 10
+let b = 5
+console.log(a/b) // OUTPUT: 2
+console.log(a%b) // OUTPUT: 0
+
+EXPONENTIAL ** EX:
+let a = 10
+let b = 5
+console.log(a**b) //OUTPUT: 10000
+
+
+INCREMENT AND DECREMENT OPERATOR: 
+let a = 10
+let b = 5
+a++
+b--
+console.log(a) //OUTPUT: 11
+console.log(b) //OUTPUT: 4
+
+
+ASSIGNMENT OPERATOR: 
+=
++=
+-=
+*=
+/=
+
+
+
+
+LOGICAL OPERATOR:
+ and : && (T+T=T)
+or : || (T+F=T)
+not : ! (if true returns false)
+these are used to combine the conditions 
+
+
+
+RELATIONAL OPERATORS :
+==, >=,<=,>,<,!=,===,!===
+these used to compare the values 
+ex:
+var num1 = 25
+var num2 = 30
+console.log(num1==num2) //OUTPUT: false
+console.log(num1!=num2) //OUTPUT: true
+console.log(num1>=num2) //OUTPUT: false
+console.log(num1<=num2) //OUTPUT: true
+console.log(num1===num2) //OUTPUT: false
+console.log(num1!==num2) //OUTPUT: true
+console.log(num1>num2) //OUTPUT: false
+console.log(num1<num2) //OUTPUT: true
+
+CONDITIONAL OPERATOR:
+TERNARY OPERATOR (?):
+First evaluates the condition for true or false :
+then if the first condition is true ok it executes if not next one will get evaluates
+SYNTAX: condition? e1:e1
+
+EX:
+let ac = 50
+let condition = (ac>50) ? "ac-on":"ac-off"
+console.log(condition) //OUTPUT: ac-off
+
+WINDOW METHODS:
+INODER TO TAKE INPUT FROM USERS IN JS:
+alert():  it is used to display alert message on the windows
+it basically used in loops
+EX:
+alert("hey girl")
+console.log(alert)
+
+
+prompt(): to take input from the user 
+by default it considers string even after we use add operator in another variable
+so in order to get numerics or any datatype we need to use type casting
+SYNTAX: let name=prompt("enter name")
+EX:
+let n=prompt("Enter the message:")
+alert(n)
+
+let a=prompt("num1:")
+let b=prompt("num2:")
+let add=a+b
+console.log(add) //OUTPUT: 2525
+console.log(typeof(a)) //OUTPUT: STRING
+
+
+
+IMPLEMENTED IN VSCODE:
+VSCODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <script src="./operators.js"></script>
+</body>
+</html>
+
+
+OPERATORS.JS 
+let a = 10
+let b = 5
+console.log(a/b)
+console.log(a%b)
+
+let a = 10
+let b = 5
+console.log(a**b)
+a++
+b--
+console.log(a)
+console.log(b)
+
+var num = 40
+num+=10
+num-=20
+console.log(num)
+
+var num1 = 25
+var num2 = 30
+var con = num1<num2 && num1==25
+var con = num1<num2 || num1==20
+var con = (!(false))
+console.log(con)
+console.log(num1==num2)
+console.log(num1!=num2)
+console.log(num1>=num2)
+console.log(num1<=num2)
+console.log(num1===num2)
+console.log(num1!==num2)
+console.log(num1>num2)
+console.log(num1<num2)
+
+
+document.write(num1===num2, '<br>')
+document.write(num1==num2 ,'<br>')
+document.write(num1>=num2,'<br>')
+document.write(num1<=num2,'<br>')
+document.write(num1>num2,'<br>')
+document.write(num1<num2,'<br>')
+document.write(num1!=num2,'<br>')
+document.write(num1!==num2,'<br>')
+
+let ac = 50
+let condition = (ac>50) ? "ac-on":"ac-off"
+console.log(condition)
+document.write(typeof(condition))
+
+alert("hey girl")
+console.log(alert)
+
+let n=prompt("Enter the message:")
+alert(n)
+
+let a=prompt("num1:")
+let b=prompt("num2:")
+let add=a+b
+console.log(add)
+console.log(typeof(a))
