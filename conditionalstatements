@@ -1,0 +1,50 @@
+implemented in vscode
+conditionalstatement.html
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./conditionaloperator.js"></script>
+</body>
+</html>
+
+
+  
+conditionalstatement.js
+let a = 15
+let b=12
+if(a==15){
+    console.log("hello")
+}
+console.log("out block")
+
+var a = 15
+var b = 20
+if(a>=20){
+    console.log("Block code")
+}
+else{
+    console.log("out of block code")
+}
+console.log("Out of block..")
+
+let customer= prompt("enter name: ")
+let age = prompt("enter age: ")
+if(age<18){
+    console.log(customer + "your not eligible for marry")
+}
+else if(age>=18 && age<=28){
+    console.log(customer+"you have perfect age for marry")
+    alert("contact consultant")
+
+}
+else if(age>28){
+    console.log(customer+"your too old to marry")    
+}
+else{
+    console.log("You may some issues i think")
+}
