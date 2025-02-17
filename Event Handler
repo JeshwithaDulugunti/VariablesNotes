@@ -1,0 +1,78 @@
+EVENT HANDLING:
+-->Event handling in react is how you make your app do some thing when the user interacts with it, like clicking a button, submitting a form
+
+1.clicking a button(onClick)
+2.pressing a key(keyDown)
+3.moving the mouse(onMouseMove)
+4.Typing a text box(onChange)
+
+How to use evenets in react:
+--use camelCase for event names.
+--pass a function too the event(not to a functioncall)
+This function will run when the event happens
+1.....onClick event
+example:
+
+function App(){
+  const handleClick=()=>{
+    alert("Button Click")
+
+  };
+  return(
+    <button onClick={handleClick}>Click me</button>
+  )
+}
+
+export default App;
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+2..onChange Event: mainly used in forms.
+there are some key components or words:
+TARGET: target is a property of the event object, and is predefined by javascriptfor dom events
+EVENT TARGET: is always refers the element that triggered the event
+event.target.value: used to access the value of input elements buttons form elements.
+
+
+example: 
+import React, {useState} from 'react'
+function App(){
+  const[text,setText]=useState("")
+  const handleChange=(event)=>{
+    setText(event.target.value)
+  }
+  return (
+    <div>
+      <input type="text" value={text} onChange={handleChange}/>
+      <p>YOur text:{text}</p>
+    </div>
+  )
+}
+export default App;
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+3..onMouseEvents: 
+example:
+
+import React,{ useState} from 'react';
+function App(){
+  const[isHovered, setHorvered] = useState(false);
+  const handleMouseEnter =()=>{
+    setHorvered(true);
+  }
+  const handleMouseLeave=()=>{
+    setHorvered(false);
+  };
+  return(
+    <div>
+      <button
+        onMouseEnter ={handleMouseEnter}
+        onMouseLeave ={handleMouseLeave}
+        style={{
+          backgroundColor: isHovered ? 'lightblue':'lightgray',
+          color: isHovered?'white':'black'
+        
+        }}>Move Me</button>
+        {isHovered && <p>Mouse is over the button</p>}
+    </div>
+  );
+};
+
+export default App;
